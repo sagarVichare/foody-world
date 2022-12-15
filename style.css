@@ -1,0 +1,341 @@
+*{margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'Kadwa', serif;
+    scroll-behavior: smooth;
+}
+p{
+    font-weight: 300;
+    color: #111;
+}
+span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/bg.jpg);
+    background-size: cover;
+}
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2{
+    font-size: 4em;
+    color: whitesmoke;
+}
+.banner .content p{
+font-size: 1em ;
+color: whitesmoke;
+}
+.btn{
+    font-size: 1em;
+    color: whitesmoke;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 15px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 5px;
+}
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width:100%;
+    padding: 15px 40px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky{
+    background: #fff;
+    padding: 10px 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.082);
+}
+header .logo{
+    width:10vmin
+}
+header.sticky .logo{
+    width: 7vmin;
+}
+header .navigation{
+    display: flex;
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-weight:300 ;
+}
+header.sticky .navigation li a{
+    color: #111;
+}
+header .navigation li a:hover{
+    color:#ff0157;
+}
+
+/* about */
+section{
+    padding: 100px;
+}
+.row
+{
+   position: relative;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+.row .col50{
+    position: relative;
+    width: 48%;
+}
+.title-text{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+.row .col50 .imgBx{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+}
+.row .col50 .imgBx img{
+    position: absolute;
+    top: 0;left: 0;width: 100%;height: 100%;
+    object-fit: cover;
+}
+
+/* menu */
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .content .box{
+    width: 250px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.185);
+}
+.menu .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.menu .content .box .imgBx img{
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu .content .box .text{
+padding: 15px 0 5px 0;
+text-align: center;
+}
+.menu .content .box .text h3{
+    font-weight:400 ;
+    color: #111;
+}
+
+/* experties */
+.expert .content{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+flex-direction: row;
+margin-top: 30px ;
+}
+.expert .content .box{
+    width:200px;
+    margin: 15px;
+}
+.expert .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.expert .content .box .imgBx img{
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.expert .content .box .text{
+    padding: 15px 0 5px 0;
+    text-align: center;
+    }
+.expert .content .box h3{
+    font-weight:400 ;
+    color: #111;
+}
+
+/* testimonial */
+.testimonial{
+    background: url(img/bg2.jpg);
+    background-size: cover;
+}
+.white .title-text, .white p{
+    color: whitesmoke;
+}
+.testimonial .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.testimonial .content .box{
+    width: 290px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.testimonial .content .box .imgBx{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.testimonial .content .box .imgBx img{
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.testimonial .content .box .text {
+    text-align: center;
+}
+.testimonial .content .box .text p{
+    color: #666;
+    font-style: italic;
+}
+.testimonial .content .box h3{
+    margin-top: 20px;
+    color:#ff0157;
+    font-size:1em;
+    font-weight: 600;
+}
+
+/* contact */
+.contact{
+ background: url(img/bg3.jpg);
+background-size: cover;
+}
+.contact .title{
+    margin-bottom: 30px;
+}
+.contactForm{
+    padding: 35px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.317);
+    max-width:  400px ;
+
+    border-radius: 20px;
+}
+.contactForm h3{
+color: #111;
+font-size: 1.2em;
+margin-bottom: 20px;
+font-weight: 600;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 5px;
+} 
+.contactForm .inputBox input,.contactForm .inputBox textarea{
+    width: 100%;
+    border: 2px solid #555;
+    padding: 5px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    resize: none;
+}
+.contactForm .inputBox input[type="submit"]
+{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* copyrightText */
+.copyrightText{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.233);
+    text-align: center;
+}
+
+@media screen and (max-width: 991px){
+    header,header.sticky{
+        padding: 10px 20px;
+    }
+    header .navigation{
+        display: none;
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(img/menu-option.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active{
+        background: url(img/close-option.png);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
+}
